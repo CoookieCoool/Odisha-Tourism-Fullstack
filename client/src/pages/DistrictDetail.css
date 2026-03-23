@@ -1,0 +1,27 @@
+.dd-hero { background: linear-gradient(135deg, var(--dark), #2A1500, #0D2020); padding: 4.5rem 2.5rem; display: flex; gap: 3rem; align-items: center; }
+.dd-hero-emoji { font-size: 7rem; flex-shrink: 0; filter: drop-shadow(0 8px 24px rgba(0,0,0,0.3)); }
+.dd-back { color: rgba(253,246,227,0.5); font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; transition: color 0.2s; }
+.dd-back:hover { color: var(--gold); }
+.dd-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(1.6rem, 4vw, 3rem); color: var(--gold); margin: 0.75rem 0 0.5rem; }
+.dd-overview { font-family: 'Cormorant Garamond', serif; font-style: italic; color: rgba(253,246,227,0.75); font-size: 1.1rem; max-width: 600px; line-height: 1.7; }
+.dd-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+.dd-info-row { display: flex; gap: 2rem; margin-top: 1rem; font-size: 0.82rem; color: rgba(253,246,227,0.55); flex-wrap: wrap; }
+
+.monuments-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 2rem; }
+.monument-card { padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
+.mc-header { display: flex; gap: 1rem; align-items: flex-start; }
+.mc-emoji { font-size: 2.8rem; }
+.mc-name { font-family: 'Cinzel Decorative', serif; font-size: 0.95rem; color: var(--dark); margin-top: 0.4rem; }
+.mc-desc { font-family: 'Cormorant Garamond', serif; font-size: 0.97rem; color: var(--mid); line-height: 1.7; }
+.mc-details { display: flex; flex-direction: column; gap: 0.35rem; }
+.mc-details div { font-size: 0.82rem; color: #555; display: flex; gap: 0.5rem; }
+.mc-highlights { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.highlight-tag { background: rgba(232,101,26,0.08); border: 1px solid rgba(232,101,26,0.2); border-radius: 3px; padding: 0.2rem 0.6rem; font-size: 0.72rem; color: var(--saffron); }
+.history-toggle { background: none; border: none; cursor: pointer; font-size: 0.75rem; color: var(--teal); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; font-family: 'Raleway', sans-serif; text-align: left; padding: 0; }
+.history-text { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 0.94rem; color: var(--mid); line-height: 1.8; padding: 1rem; background: rgba(232,101,26,0.04); border-left: 2px solid var(--gold); border-radius: 0 4px 4px 0; }
+
+@media (max-width: 768px) {
+  .dd-hero { flex-direction: column; text-align: center; }
+  .dd-tags, .dd-info-row { justify-content: center; }
+  .monuments-grid { grid-template-columns: 1fr; }
+}

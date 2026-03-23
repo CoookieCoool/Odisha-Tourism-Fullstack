@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --saffron: #E8651A;
+  --deep-saffron: #C4501A;
+  --gold: #D4A017;
+  --bright-gold: #F5C842;
+  --cream: #FDF6E3;
+  --warm-white: #FFFBF0;
+  --dark: #1A0F00;
+  --mid: #3D2B1F;
+  --text: #2C1A0E;
+  --teal: #1A6B6B;
+  --light-teal: #E0F0F0;
+  --card-bg: #FFFFFF;
+  --shadow: 0 4px 20px rgba(0,0,0,0.08);
+  --shadow-hover: 0 16px 50px rgba(0,0,0,0.14);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Raleway', sans-serif; background: var(--cream); color: var(--text); overflow-x: hidden; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--saffron); border-radius: 3px; }
+
+a { text-decoration: none; color: inherit; }
+
+/* Page wrapper */
+.page { padding-top: 72px; min-height: 100vh; }
+
+/* Section styles */
+.section { padding: 5rem 2rem; }
+.section-dark { background: var(--dark); }
+.section-cream { background: var(--cream); }
+.section-white { background: #fff; }
+
+.section-header { text-align: center; margin-bottom: 3.5rem; }
+.section-tag { font-size: 0.73rem; letter-spacing: 0.4em; color: var(--saffron); text-transform: uppercase; font-weight: 600; margin-bottom: 0.75rem; display: block; }
+.section-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(1.7rem, 3.5vw, 2.8rem); color: var(--dark); line-height: 1.2; margin-bottom: 1rem; }
+.section-title.light { color: var(--warm-white); }
+.section-line { width: 55px; height: 2px; background: linear-gradient(to right, var(--saffron), var(--gold)); margin: 0 auto 1.2rem; }
+.section-desc { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; color: var(--mid); max-width: 580px; margin: 0 auto; font-style: italic; line-height: 1.8; }
+.section-desc.light { color: rgba(253,246,227,0.7); }
+
+/* Container */
+.container { max-width: 1200px; margin: 0 auto; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 2.2rem; border: none; border-radius: 3px; cursor: pointer; font-family: 'Raleway', sans-serif; font-size: 0.83rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; transition: all 0.3s; text-decoration: none; }
+.btn-primary { background: var(--saffron); color: white; box-shadow: 0 4px 18px rgba(232,101,26,0.35); }
+.btn-primary:hover { background: var(--deep-saffron); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(232,101,26,0.55); }
+.btn-outline { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
+.btn-outline:hover { background: var(--gold); color: var(--dark); }
+.btn-teal { background: var(--teal); color: white; }
+.btn-teal:hover { background: var(--deep-teal, #0D4040); transform: translateY(-2px); }
+
+/* Cards */
+.card { background: var(--card-bg); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow); transition: all 0.3s; border: 1px solid rgba(212,160,23,0.15); }
+.card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+
+/* Grid layouts */
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.8rem; }
+.grid-4 { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 2rem; }
+
+/* Tags/badges */
+.badge { display: inline-block; padding: 0.25rem 0.65rem; border-radius: 2px; font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 600; }
+.badge-saffron { background: var(--saffron); color: white; }
+.badge-gold { background: var(--gold); color: white; }
+.badge-teal { background: var(--teal); color: white; }
+.badge-outline { border: 1px solid var(--saffron); color: var(--saffron); }
+
+/* Loading */
+.loading-screen { min-height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.5rem; }
+.spinner { width: 48px; height: 48px; border: 3px solid rgba(232,101,26,0.2); border-top-color: var(--saffron); border-radius: 50%; animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-text { font-family: 'Cinzel Decorative', serif; color: var(--saffron); font-size: 1rem; letter-spacing: 0.2em; }
+
+/* Error */
+.error-box { text-align: center; padding: 3rem 2rem; }
+.error-box h3 { font-family: 'Cinzel Decorative', serif; color: var(--saffron); margin-bottom: 1rem; }
+
+/* Animations */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(25px); } to { opacity: 1; transform: translateY(0); } }
+.fade-up { animation: fadeUp 0.6s ease forwards; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-3, .grid-4, .grid-2 { grid-template-columns: 1fr; }
+  .section { padding: 3.5rem 1.2rem; }
+}

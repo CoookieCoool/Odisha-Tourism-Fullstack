@@ -1,0 +1,20 @@
+.districts-hero {
+  background: linear-gradient(135deg, var(--dark), var(--mid));
+  padding: 5rem 2rem 4rem; text-align: center;
+}
+.filter-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 2.5rem; }
+.filter-btn {
+  padding: 0.45rem 1.1rem; border: 1px solid rgba(232,101,26,0.3);
+  background: transparent; border-radius: 2px; cursor: pointer;
+  font-family: 'Raleway', sans-serif; font-size: 0.78rem;
+  letter-spacing: 0.12em; color: var(--mid); transition: all 0.25s;
+}
+.filter-btn.active, .filter-btn:hover { background: var(--saffron); color: white; border-color: var(--saffron); }
+
+.district-card { padding: 1.5rem; display: flex; flex-direction: column; gap: 0.85rem; }
+.dc-top { display: flex; align-items: flex-start; gap: 1rem; }
+.dc-emoji { font-size: 2.8rem; }
+.dc-name { font-family: 'Cinzel Decorative', serif; font-size: 1.05rem; color: var(--dark); margin-top: 0.4rem; }
+.dc-overview { font-family: 'Cormorant Garamond', serif; font-size: 0.97rem; color: var(--mid); line-height: 1.7; font-style: italic; }
+.dc-meta { display: flex; gap: 1.5rem; font-size: 0.78rem; color: #777; }
+.dc-link { font-size: 0.78rem; font-weight: 600; color: var(--saffron); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.5rem; }

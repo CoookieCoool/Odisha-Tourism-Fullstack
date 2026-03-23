@@ -1,0 +1,13 @@
+.monuments-hero { background: linear-gradient(135deg, var(--dark), var(--mid)); padding: 5rem 2rem 4rem; text-align: center; }
+.controls-row { display: flex; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+.sort-select { padding: 0.45rem 0.9rem; border: 1px solid rgba(232,101,26,0.3); background: white; font-family: 'Raleway', sans-serif; font-size: 0.82rem; color: var(--text); border-radius: 3px; outline: none; cursor: pointer; flex-shrink: 0; }
+.results-count { font-size: 0.82rem; color: #888; margin-bottom: 1.5rem; }
+
+.mon-card { display: flex; flex-direction: column; text-decoration: none; }
+.mon-emoji { font-size: 3rem; text-align: center; padding: 1.8rem 1.5rem 0.5rem; background: var(--warm-white); }
+.mon-body { padding: 1rem 1.4rem 1.4rem; display: flex; flex-direction: column; gap: 0.4rem; flex: 1; }
+.mon-name { font-family: 'Cinzel Decorative', serif; font-size: 0.9rem; color: var(--dark); }
+.mon-location { font-size: 0.72rem; color: var(--saffron); letter-spacing: 0.12em; text-transform: uppercase; }
+.mon-desc { font-family: 'Cormorant Garamond', serif; font-size: 0.93rem; color: var(--mid); line-height: 1.6; flex: 1; }
+.mon-footer { display: flex; justify-content: space-between; margin-top: 0.5rem; font-size: 0.78rem; color: #666; }
+.mon-rating { color: var(--gold); }
