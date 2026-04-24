@@ -1,4 +1,4 @@
-+.md-hero { background: linear-gradient(135deg, var(--dark), #2A1500); padding: 4.5rem 2.5rem; display: flex; gap: 3rem; align-items: center; }
+.md-hero { background: linear-gradient(135deg, var(--dark), #2A1500); padding: 4.5rem 2.5rem; display: flex; gap: 3rem; align-items: center; }
 .md-emoji { font-size: 8rem; filter: drop-shadow(0 8px 24px rgba(0,0,0,0.3)); flex-shrink: 0; }
 .md-hero-content { display: flex; flex-direction: column; gap: 0.5rem; }
 .md-title { font-family: 'Cinzel Decorative', serif; font-size: clamp(1.4rem, 4vw, 2.8rem); color: var(--gold); line-height: 1.2; }
@@ -46,4 +46,13 @@
   .md-grid { grid-template-columns: 1fr; }
   .md-emoji { font-size: 5rem; }
   .md-hero-image { margin: 1.5rem auto 0; max-width: 280px; }
+}
+
+@media (max-width: 600px) {
+  .md-hero { padding: 3.5rem 1rem; gap: 1.2rem; }
+  .md-emoji { font-size: 4.2rem; }
+  .info-card { padding: 1rem; }
+  .ic-text { font-size: 0.98rem; line-height: 1.65; }
+  .visitor-list div { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
+  .visitor-list span { text-align: left; }
 }

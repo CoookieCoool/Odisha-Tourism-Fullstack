@@ -25,3 +25,10 @@
   .dd-tags, .dd-info-row { justify-content: center; }
   .monuments-grid { grid-template-columns: 1fr; }
 }
+
+@media (max-width: 600px) {
+  .dd-hero { padding: 3.5rem 1rem; gap: 1.2rem; }
+  .dd-hero-emoji { font-size: 4.5rem; }
+  .dd-overview { font-size: 0.98rem; line-height: 1.6; }
+  .monument-card { padding: 1rem; }
+}

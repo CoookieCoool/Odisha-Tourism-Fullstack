@@ -99,5 +99,9 @@
 .chat-send:disabled { opacity: 0.5; cursor: not-allowed; }
 
 @media (max-width: 480px) {
-  .chatbot { width: calc(100vw - 2rem); right: 1rem; bottom: 5rem; }
+  .chat-fab { right: 1rem; bottom: 1rem; width: 52px; height: 52px; }
+  .chatbot { width: calc(100vw - 1rem); right: 0.5rem; bottom: 4.5rem; max-height: 70vh; }
+  .chat-messages { max-height: 45vh; padding: 0.85rem; }
+  .quick-replies { padding: 0.6rem 0.85rem; }
+  .chat-input-row { padding: 0.75rem 0.85rem; }
 }

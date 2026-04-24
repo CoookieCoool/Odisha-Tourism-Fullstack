@@ -18,3 +18,12 @@
 .dc-overview { font-family: 'Cormorant Garamond', serif; font-size: 0.97rem; color: var(--mid); line-height: 1.7; font-style: italic; }
 .dc-meta { display: flex; gap: 1.5rem; font-size: 0.78rem; color: #777; }
 .dc-link { font-size: 0.78rem; font-weight: 600; color: var(--saffron); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.5rem; }
+
+@media (max-width: 600px) {
+  .districts-hero { padding: 4rem 1rem 3rem; }
+  .filter-bar { gap: 0.4rem; justify-content: flex-start; overflow-x: auto; padding-bottom: 0.4rem; }
+  .filter-btn { white-space: nowrap; }
+  .district-card { padding: 1rem; }
+  .dc-emoji { font-size: 2.2rem; }
+  .dc-meta { flex-wrap: wrap; gap: 0.6rem 1rem; }
+}

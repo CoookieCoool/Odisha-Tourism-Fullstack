@@ -11,3 +11,10 @@
 .no-results { text-align: center; padding: 4rem 2rem; }
 .no-results h3 { font-family: 'Cinzel Decorative', serif; color: var(--saffron); margin: 1rem 0 0.5rem; }
 .no-results p { color: var(--mid); font-size: 0.95rem; }
+
+@media (max-width: 600px) {
+  .search-hero { padding: 4rem 1rem 3rem; }
+  .search-result-card { align-items: flex-start; gap: 0.8rem; padding: 1rem; }
+  .src-emoji { font-size: 2rem; }
+  .src-arrow { display: none; }
+}
