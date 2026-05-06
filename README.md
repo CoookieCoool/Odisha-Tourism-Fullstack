@@ -97,7 +97,7 @@ npm run dev
 - **API server:** http://localhost:5000
 - **API health check:** http://localhost:5000/api/health
 
-###Link For The Website - https://odisha-tourism-fullstack.vercel.app
+###Link For The Website - https://odisha-tourism-fullstack.vercel.app/
 ### 5. Build for Production
 
 ```bash
